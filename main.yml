@@ -1,0 +1,12 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  become_user: root
+  tasks:
+  - name: template example to create html file
+    template:
+      src: create_html.j2
+      dest: $HOME/homepage.html
+      owner: "{{ ansible_user }}"
+      group: "{{ ansible_user }}"
+      mode: 0644
