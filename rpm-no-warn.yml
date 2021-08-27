@@ -1,4 +1,4 @@
-- hosts: target
+- hosts: localhost
   gather_facts: no
   tasks:
   - name: get coreutils version
