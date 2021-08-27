@@ -1,7 +1,7 @@
 - hosts: localhost
   gather_facts: no
   tasks:
-  - name: install the latest version of Apache
+  - name: install the 2.2.29 version of Apache
     yum:
       name: httpd-2.2.29-1.4.amzn1d
       state: present
