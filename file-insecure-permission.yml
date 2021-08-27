@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+  - name: Give insecure permissions to an existing file
+    file:
+      path: /work
+      owner: root
+      group: root
+      mode: '1777'

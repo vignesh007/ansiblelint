@@ -1,0 +1,8 @@
+- hosts: target
+  gather_facts: no
+  tasks:
+  - name: get coreutils version
+    command: rpm -q coreutils
+    args:
+      warn: no
+    register: coreutils_version:
